@@ -25,7 +25,19 @@ student_scores = {
     "Ken": 92,
     "Emma": 74
 
-
 }
 
+middle_score = 0  # 儲存中間分數
+student_name = ""  # 儲存中間分數的學生名字
 
+max_score = max(student_scores.values())  # 取得最高分
+min_score = min(student_scores.values())  # 取得最低分
+
+for student in student_scores.keys():
+    # 如果這位學生的分數不是最高也不是最低，就代表是中間分數
+    if student_scores[student] != max_score and student_scores[student] != min_score:
+        student_name = student  # 記錄這位學生
+        middle_score = student_scores[student]  # 記錄他的分數
+        break  # 找到其中一位符合的就結束迴圈
+
+print(f"中間成績是:{student_name},分數是:{middle_score}")
