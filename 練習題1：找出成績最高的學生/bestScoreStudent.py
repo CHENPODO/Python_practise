@@ -26,3 +26,8 @@ All_keys = my_dict_stu.keys()
 # ['Tom', 'Alice', 'Bob', 'John', 'Lucy', 'Ken', 'Emma']
 top_score = 0 # 先設定為0
 top_score_name = "" # 先設定為空字串
+for keys in All_keys:
+    if my_dict_stu[keys] > top_score:
+        top_score_name = keys
+        top_score = my_dict_stu[keys]
+print(f"最高分是{top_score_name},分數是{top_score}")
