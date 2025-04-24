@@ -1,0 +1,1 @@
+print("我的第一個python!")
