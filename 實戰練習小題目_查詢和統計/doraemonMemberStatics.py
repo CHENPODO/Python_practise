@@ -5,7 +5,6 @@
 1. 找出所有住在「東京」的角色，並列出他們的名字與年齡。
 2. 計算所有角色的平均年齡。
 """
-from itertools import count
 
 AllMember = {
     "大雄": {
