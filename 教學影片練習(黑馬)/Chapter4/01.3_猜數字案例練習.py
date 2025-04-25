@@ -4,7 +4,7 @@
 猜完數字後會提示猜了幾次
 """
 
-# 獲取0~100隨機數
+# 獲取0~10隨機數
 import random
 num = random.randint(0,10)
 # print(num)
