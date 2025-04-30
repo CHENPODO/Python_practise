@@ -22,7 +22,7 @@
     mode : 設置打開文件的模式(訪問模式):只讀、寫入、追加等
     encoding : 編碼格式(推薦使用 UTF-8)
 Ex.
-f=open('python.txt','r',encoding = 'UTF-8'
+f=open('python.txt','r',encoding = 'UTF-8')
 # encoding的順序不是第三位，所以不能用位置參數，用關鍵字參數直接指定
 
 
