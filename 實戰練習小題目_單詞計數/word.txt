@@ -1,0 +1,3 @@
+Python is great. 
+Learning Python can be fun. 
+Python is powerful.

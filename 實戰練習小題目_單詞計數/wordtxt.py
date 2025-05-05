@@ -13,7 +13,7 @@ Python is great. Learning Python can be fun. Python is powerful.
 - 統計指定單詞（例如 "Python"）出現的次數（區分大小寫或不區分大小寫都可以，但需說明）
 將結果輸出至終端機。
 """
-f = open("C:/Users/cindy/OneDrive/文件/word.txt","r",encoding="UTF-8")
+f = open("C:/Users/cindy/OneDrive/桌面/Python_practise/實戰練習小題目_單詞計數/word.txt","r",encoding="UTF-8")
 print(type(f)) #<class '_io.TextIOWrapper'>
 
 # readlines()
