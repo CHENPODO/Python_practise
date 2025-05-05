@@ -24,8 +24,16 @@ print(type(f)) #<class '_io.TextIOWrapper'>
 count = 0
 # for
 for line in f:
-    print(line.strip())  # 顯示每行內容（去除換行符）
-    count += line.count("Python")
+    line = line.strip() #（去除換行符）
+    words = line.split(" ") #
+    print(words)  # 顯示每行內容
+    """
+    ['Python', 'is', 'great.']
+    ['Learning', 'Python', 'can', 'be', 'fun.']
+    ['Python', 'is', 'powerful.']
+    """
+
+    count += words.count("Python")
 
 f.close()
 print(count)
