@@ -53,3 +53,4 @@ else:
     print("呀哈!沒有bug，成功運行啦!!")
 finally:
     f.close() # 一定會執行
+    print("我是finally，有沒有異常我都要執行!!")
