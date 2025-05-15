@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d3f0e7e68dd4a644a2e6ffbed8419de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d3f0e7e68dd4a644a2e6ffbed8419de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d3f0e7e68dd4a644a2e6ffbed8419de = L.map(
+                "map_1d3f0e7e68dd4a644a2e6ffbed8419de",
+                {
+                    center: [24.8261, 121.7728],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0061ee5755cf15868b34c1a785bd383f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0061ee5755cf15868b34c1a785bd383f.addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            var poly_line_b172b330eab264506031b43dfa0a7b35 = L.polyline(
+                [[24.82702, 121.77469], [24.829552, 121.773001], [24.827657, 121.772424], [24.821977, 121.768499], [24.834333303714846, 121.74706869325325]],
+                {"bubblingMouseEvents": true, "color": "#fa0", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            poly_line_b172b330eab264506031b43dfa0a7b35.bindTooltip(
+                `<div>
+                     散步路線
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_0d06cd9c86d4e0112dc6a1b300bca606 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c8755011674355cb07a39e1a2560231f = L.marker(
+                [24.82702, 121.77469],
+                {
+}
+            ).addTo(feature_group_0d06cd9c86d4e0112dc6a1b300bca606);
+        
+    
+            var icon_33a85c3b414dd974b4447a10e92d445c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c8755011674355cb07a39e1a2560231f.bindTooltip(
+                `<div>
+                     礁溪火車站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8755011674355cb07a39e1a2560231f.setIcon(icon_33a85c3b414dd974b4447a10e92d445c);
+            
+    
+            feature_group_0d06cd9c86d4e0112dc6a1b300bca606.addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            var feature_group_a934778b5d33e3ab011f4a8b7a3e15b0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d47ebd99463c3143253d0229f2180dda = L.marker(
+                [24.821977, 121.768499],
+                {
+}
+            ).addTo(feature_group_a934778b5d33e3ab011f4a8b7a3e15b0);
+        
+    
+            var icon_0b58f3d8427b9cb9b852f9819e04b6f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d47ebd99463c3143253d0229f2180dda.bindTooltip(
+                `<div>
+                     礁溪國小
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d47ebd99463c3143253d0229f2180dda.setIcon(icon_0b58f3d8427b9cb9b852f9819e04b6f6);
+            
+    
+            feature_group_a934778b5d33e3ab011f4a8b7a3e15b0.addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            var feature_group_ba1d5cf8a9da4212e581dc69424bad0e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3b64bb08d7cd18b47eae9481cfc1021b = L.marker(
+                [24.829552, 121.773001],
+                {
+}
+            ).addTo(feature_group_ba1d5cf8a9da4212e581dc69424bad0e);
+        
+    
+            var icon_0d3da2d7df573c3601eeda2590d60c68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "spa",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3b64bb08d7cd18b47eae9481cfc1021b.bindTooltip(
+                `<div>
+                     湯圍溝公園
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b64bb08d7cd18b47eae9481cfc1021b.setIcon(icon_0d3da2d7df573c3601eeda2590d60c68);
+            
+    
+            var marker_ee53fb44c8932314122148bdde0da221 = L.marker(
+                [24.827657, 121.772424],
+                {
+}
+            ).addTo(feature_group_ba1d5cf8a9da4212e581dc69424bad0e);
+        
+    
+            var icon_f08f663f0c6c2228ef0166a146fdbd0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "hot-tub",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ee53fb44c8932314122148bdde0da221.bindTooltip(
+                `<div>
+                     礁溪溫泉公園
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee53fb44c8932314122148bdde0da221.setIcon(icon_f08f663f0c6c2228ef0166a146fdbd0e);
+            
+    
+            feature_group_ba1d5cf8a9da4212e581dc69424bad0e.addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            var feature_group_86e000dc19af90f1b6f382da55e01081 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_9c389f2feb1bec62fe82da7d9be838e9 = L.marker(
+                [24.834333303714846, 121.74706869325325],
+                {
+}
+            ).addTo(feature_group_86e000dc19af90f1b6f382da55e01081);
+        
+    
+            var icon_a5eafbd8e55f6befeed324d6c862ca43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9c389f2feb1bec62fe82da7d9be838e9.bindTooltip(
+                `<div>
+                     五峰旗瀑布
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c389f2feb1bec62fe82da7d9be838e9.setIcon(icon_a5eafbd8e55f6befeed324d6c862ca43);
+            
+    
+            feature_group_86e000dc19af90f1b6f382da55e01081.addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+        
+    
+            var layer_control_63335e614c0ef9371def63a47c0f8bca_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0061ee5755cf15868b34c1a785bd383f,
+                },
+                overlays :  {
+                    "\u4ea4\u901a" : feature_group_0d06cd9c86d4e0112dc6a1b300bca606,
+                    "\u6559\u80b2" : feature_group_a934778b5d33e3ab011f4a8b7a3e15b0,
+                    "\u6eab\u6cc9" : feature_group_ba1d5cf8a9da4212e581dc69424bad0e,
+                    "\u81ea\u7136" : feature_group_86e000dc19af90f1b6f382da55e01081,
+                },
+            };
+            let layer_control_63335e614c0ef9371def63a47c0f8bca = L.control.layers(
+                layer_control_63335e614c0ef9371def63a47c0f8bca_layers.base_layers,
+                layer_control_63335e614c0ef9371def63a47c0f8bca_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_1d3f0e7e68dd4a644a2e6ffbed8419de);
+
+        
+</script>
+</html>
