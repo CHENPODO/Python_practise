@@ -1,16 +1,6 @@
+# 引入
 import folium
 from folium import FeatureGroup
-
-"""
-| 景點名稱    | 緯度（Lat）   | 經度（Lng）    |
-| ------- | --------- | ---------- |
-| 礁溪溫泉公園  | 24.827657 | 121.772424 |
-| 湯圍溝溫泉公園 | 24.829552 | 121.773001 |
-| 礁溪火車站   | 24.827020 | 121.774690 |
-| 五峰旗瀑布   | 24.842203 | 121.788514 |
-| 礁溪國小    | 24.821977 | 121.768499 |
-
-"""
 
 # 建立礁溪鄉地圖
 jiaoxi_map = folium.Map(
@@ -19,28 +9,9 @@ jiaoxi_map = folium.Map(
     zoom_start=16
 )
 
-# 建立景點座標（從火車站到溫泉公園，再到國小）
-trail_coordinates = [
-    [24.827020, 121.774690],  # 礁溪火車站
-    [24.829552, 121.773001],  # 湯圍溝公園
-    [24.827657, 121.772424],  # 礁溪溫泉公園
-    [24.821977, 121.768499],  # 礁溪國小
-    [24.834333303714846, 121.74706869325325] # 五峰旗瀑布
-]
-
-folium.PolyLine(
-    trail_coordinates,
-    tooltip="散步路線",
-    color="#fa0",
-    weight=6,
-).add_to(jiaoxi_map)
-
 # 建立圖層群組（FeatureGroups）
 """
-1. 交通 traffic
-2. 教育 school
-3. 溫泉 spa
-4. 自然 nature
+1. 交通 traffic 2. 教育 school 3. 溫泉 spa 4. 自然 nature
 """
 group_traffic = FeatureGroup("交通").add_to(jiaoxi_map)
 group_school = FeatureGroup("教育").add_to(jiaoxi_map)
@@ -76,7 +47,7 @@ locations = {
     },
 }
 
-# 順便加入每個景點的 marker
+# 加入每個景點的 marker
 for name,data in locations.items():
     latlng = data["coords"]
     icon_name, color, prefix = data["icon"]
@@ -86,6 +57,24 @@ for name,data in locations.items():
         tooltip=name,
         icon=folium.Icon(icon=icon_name,prefix=prefix,color=color)
        ).add_to(group)
+
+# 散步路線順序
+trail_order = [
+    "礁溪火車站",
+    "湯圍溝公園",
+    "礁溪溫泉公園",
+    "礁溪國小",
+    "五峰旗瀑布"
+]
+# 產生座標列表
+trail_coordinates = [locations["name"]["coords"] for name in trail_order]
+
+folium.PolyLine(
+    trail_coordinates,
+    tooltip="散步路線",
+    color="#fa0",
+    weight=6,
+).add_to(jiaoxi_map)
 
 # 加入圖層控制開關
 folium.LayerControl().add_to(jiaoxi_map)
