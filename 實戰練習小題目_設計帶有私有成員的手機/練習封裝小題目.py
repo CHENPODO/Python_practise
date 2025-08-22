@@ -12,8 +12,9 @@
 #            正在通話中
 class Phone:
     # 設計一個私有成員變量 __5g_enable
-    __5g_enable = False # 5g狀態close
-
+    # __5g_enable = False # 5g狀態close
+    def __init__(self,__5g_enable=False):
+        self.__5g_enable = __5g_enable
 
     # 私有成員方法:__check_5g()
     def __check_5g(self):
@@ -28,5 +29,10 @@ class Phone:
         self.__check_5g()
         print("正在通話中")
 
-phone = Phone()
-phone.call_by_5g()
+# 手機1
+phone1 = Phone(False)
+phone1.call_by_5g()
+
+# 手機2
+phone2 = Phone(True)
+phone2.call_by_5g()
