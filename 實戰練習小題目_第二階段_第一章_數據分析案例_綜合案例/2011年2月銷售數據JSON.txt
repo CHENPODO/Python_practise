@@ -1,0 +1,10 @@
+{"date":"2011-02-01","order_id":"caf99222-53d6-427b-925d-3187fc71a86a","money":1805,"province":"Osaka"}
+{"date":"2011-02-01","order_id":"3adef683-3f9b-4197-ba9f-2b25704c350b","money":2547,"province":"Hokkaido"}
+{"date":"2011-02-01","order_id":"93cf735a-5f90-4df9-a7f6-de7233cd1ddb","money":1216,"province":"Tokyo"}
+{"date":"2011-02-01","order_id":"0042323a-e555-46d4-a70b-b1830ca3aae7","money":1193,"province":"Tokyo"}
+{"date":"2011-02-01","order_id":"0bf7f23a-c955-4d84-985b-b3bfc57dfb77","money":230,"province":"Tokyo"}
+{"date":"2011-02-01","order_id":"6ee5af28-f6ce-42a5-986b-96f384c15d4a","money":2770,"province":"Osaka"}
+{"date":"2011-02-01","order_id":"7cdeefeb-6b52-4db0-b927-26396233b28b","money":2291,"province":"Osaka"}
+{"date":"2011-02-01","order_id":"a73d1259-fd83-413d-b1cb-b577c09d067f","money":2457,"province":"Fukuoka"}
+{"date":"2011-02-01","order_id":"2ead7fc0-f8e8-40d4-8427-b478c3d18bb0","money":2267,"province":"Tokyo"}
+{"date":"2011-02-01","order_id":"a19df2ca-88b8-4bd7-b64b-c5cd9b54186b","money":2321,"province":"Osaka"}
